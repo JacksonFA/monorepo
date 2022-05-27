@@ -1,0 +1,61 @@
+{
+  "name": "@subsfy/api",
+  "version": "1.0.0",
+  "description": "Seu gerenciador de assinaturas",
+  "main": "index.js",
+  "scripts": {
+    "studio": "npx prisma studio",
+    "migrate": "npx prisma migrate dev",
+    "test": "jest",
+    "dev": "nodemon --inspect=5858 -e ts,tsx --exec node -r tsconfig-paths/register -r ts-node/register ./src/local.ts",
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "prepare": "husky install",
+    "generate": "tsoa spec -c tsoa.config.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "_moduleAliases": {
+    "@adapters": "dist/adapters",
+    "@configs": "dist/configs",
+    "@controllers": "dist/controllers",
+    "@repositories": "dist/repositories",
+    "@use-cases": "dist/use-cases",
+    "@winston": "dist/winston.js"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.179",
+    "@swc/jest": "^0.2.20",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.5.0",
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^17.0.31",
+    "@types/nodemailer": "^6.4.4",
+    "@types/react": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "husky": "^7.0.4",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "prisma": "^3.14.0",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^4.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "google-auth-library": "^8.0.2",
+    "module-alias": "^2.2.2",
+    "nodemailer": "^6.7.5",
+    "reflect-metadata": "^0.1.13",
+    "tsoa": "^4.0.0",
+    "winston": "^3.7.2",
+    "yup": "^0.32.11"
+  }
+}

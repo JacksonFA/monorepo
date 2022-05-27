@@ -1,0 +1,21 @@
+_id: req_wrk_ada5ba4362a14285ad1f12ef2f922d86e344b512
+type: Request
+parentId: fld_4dc8c7a82c25485fb58a4caccd4b0e33
+modified: 1652362210189
+created: 1652361457752
+url: "{{ base_url }}/users/{{ userId }}"
+name: Select
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1652361457801
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

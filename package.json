@@ -1,0 +1,23 @@
+{
+  "name": "subsfy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "author": "JacksonArceno <jackson.arceno@seventh.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.2",
+    "@subsfy/eslint-config": "*",
+    "@types/jest": "^26.0.5",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.3"
+  }
+}

@@ -1,0 +1,36 @@
+_id: req_wrk_ada5ba4362a14285ad1f12ef2f922d86fe3d55d0
+type: Request
+parentId: fld_4dc8c7a82c25485fb58a4caccd4b0e33
+modified: 1652362605775
+created: 1652361457754
+url: "{{ base_url }}/users"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "Teste insomnia",
+      "avatar": "",
+      "email": "insomnia@teste.com.br",
+      "currency": "real",
+      "payMethods": [
+        "credit",
+    		"pix"
+      ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_af49efdb22f54450b392d254277bf147
+authentication: {}
+metaSortKey: -1652361457851
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
